@@ -1,0 +1,6 @@
+ipykernel # personal
+
+opencv-python # al importarlo es cv2
+matplotlib
+pandas
+numpy
