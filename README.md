@@ -8,12 +8,16 @@ Detección de objetos en entornos urbanos con YOLOv8 sobre el dataset VisDrone20
 urban-vision-dl/
 ├── data/                    → datasets (no incluidos, ver instrucciones)
 ├── notebooks/
-│   └── urban_vision_dl.ipynb   → notebook principal
+│   └── urban_vision_dl.ipynb   → notebook principal/incluye reflexión
 ├── figures/
 │   ├── v1_yolov8n/          → curvas y métricas modelo baseline
 │   ├── v2_yolov8s/          → curvas y métricas mejor modelo
 │   ├── v3_yolov8n_tuned/    → curvas y métricas modelo con lr ajustado
 │   └── v4_yolov8s_combined/ → curvas y métricas modelo dataset ampliado
+├── demo_videos/ → ejemplos aplicando el mejor modelo
+│   ├── video1_highway_output.mp4      → inferencia en carretera de alta velocidad
+│   ├── video2_intersection_output.mp4 → inferencia en intersección con múltiples vehículos
+│   └── video3_urban_dense_output.mp4  → inferencia en cruce urbano denso con peatones
 ├── informe.pdf              → memoria técnica Parte 1
 ├── requirements.txt
 └── README.md
@@ -54,4 +58,4 @@ No necesitas descargar nada. Al ejecutar la sección de demo del notebook, yt-dl
 
 ## Ejecución
 
-Con los datos en `data/` y el entorno activado con las dependencias de `requirements.txt`, el notebook es ejecutable en su totalidad. No obstante, el tiempo de cómputo del entrenamiento es elevado (varias horas por modelo). Por ello se incluye la carpeta `figures/` con las gráficas y tablas de resultados más importantes de cada modelo organizadas por carpetas, permitiendo revisar los resultados sin necesidad de reentrenar.
+Con los datos en `data/` y el entorno activado con las dependencias de `requirements.txt`, el notebook es ejecutable en su totalidad. No obstante, el tiempo de cómputo del entrenamiento es elevado (varias horas por modelo). Por ello se incluye la carpeta `figures/` con las gráficas y tablas de resultados más importantes de cada modelo organizadas por carpetas, permitiendo revisar los resultados sin necesidad de reentrenar. La carpeta `demo_videos/` incluye tres vídeos de inferencia real con el modelo v2 sobre escenas urbanas distintas.
