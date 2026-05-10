@@ -6,3 +6,14 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 enunciado/
+
+
+notebooks/runs/
+notebooks/*.pt
+notebooks/yolo*.pt
+requirements\ (Copiar).txt
+data/
+venv_urban_dl/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
